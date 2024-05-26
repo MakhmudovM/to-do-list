@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url(../img/Bitmap\ \(1\).png) no-repeat center center fixed;
+    background-size: cover;
+    transition: background 0.5s, color 0.5s;
+    color: #333;
+}
+
+.dark-theme {
+    background: url(../img/Bitmap.png) no-repeat center center fixed;
+    background-size: cover;
+    color: #ccc;
+}
+.hg-con{
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.container {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background 0.5s;
+}
+
+.dark-theme .container {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.theme-toggle {
+    cursor: pointer;
+}
+
+.theme-toggle img {
+    width: 24px;
+    height: 24px;
+}
+
+.todo-input {
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.todo-list {
+    list-style: none;
+    padding: 0;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.todo-item.completed span {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.todo-item button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.filters {
+    display: flex;
+    gap: 10px;
+}
+
+.filter-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+}
+
+.filter-btn.active {
+    font-weight: bold;
+}
+
+.clear-completed {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+}
+
+.dark-theme .filter-btn,
+.dark-theme .clear-completed {
+    color: #ccc;
+}
+
+.radio-btn {
+    position: relative;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    border: 2px solid #333;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.radio-btn::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    background: #333;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.radio-btn.checked::after {
+    opacity: 1;
+}
+
+.dark-theme .radio-btn {
+    border-color: #ccc;
+}
+
+.dark-theme .radio-btn::after {
+    background: #ccc;
+}
+.left-section{
+
+}

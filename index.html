@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO App</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="header hg-con">
+        <h1>TODO</h1>
+        <div class="theme-toggle">
+            <img src="img/moon-svgrepo-com.svg" alt="Toggle Theme" class="theme-icon">
+        </div>
+    </div>
+    <div class="container">
+        <input type="text" class="todo-input" placeholder="Currently typing...">
+        <ul class="todo-list">
+        </ul>
+        <div class="footer">
+            <span class="items-left">0 items left</span>
+            <div class="filters">
+                <button class="filter-btn" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="active">Active</button>
+                <button class="filter-btn" data-filter="completed">Completed</button>
+            </div>
+            <button class="clear-completed">Clear Completed</button>
+        </div>
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+</html>
