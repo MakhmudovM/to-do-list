@@ -161,3 +161,50 @@ body {
 .left-section{
 
 }
+
+
+@media only screen and (max-width: 600px) {
+    .container {
+        max-width: 90%;
+        margin: 50px auto;
+    }
+
+    .header h1 {
+        font-size: 20px;
+    }
+
+    .theme-toggle img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .todo-input {
+        margin: 10px 0;
+    }
+}
+
+
+@media only screen and (max-width: 400px) {
+    .container {
+        padding: 10px;
+    }
+
+    .header h1 {
+        font-size: 18px;
+    }
+
+    .theme-toggle img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .todo-input {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .todo-item {
+        padding: 8px;
+    }
+}
+
